@@ -312,6 +312,7 @@ body {
     }
 
     .main_content {
+
         .main_content_divs {
             display: flex;
             justify-content: space-evenly;
@@ -385,13 +386,205 @@ body {
                 }
             }
         }
+
+        .main-content_btns {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 75px 0px;
+
+            #conocenos {
+                color: white;
+                background: var(--yellow-);
+                border: none;
+                padding: 10px 15px;
+                font-size: 17px;
+                cursor: pointer;
+
+
+            }
+
+        }
+
     }
 
 
 
 }
 
+.custom_soap {
+    background: var(--light-green-);
+    padding: 50px 0px;
 
+    h2 {
+        color: white;
+        text-align: center;
+        font-size: 50px;
+    }
+
+
+    .custom_content {
+        display: flex;
+        padding: 50px 20%;
+
+        .custom_form {
+            width: 50%;
+
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+            label {
+                margin-bottom: 10px;
+                margin-top: 10px;
+            }
+
+            input {
+                width: 40%;
+                border: 0;
+                padding: 7px 10px;
+                border-radius: 3px;
+
+            }
+
+            textarea {
+                min-width: 80%;
+                max-width: 80%;
+                min-height: 150px;
+                max-height: 150px;
+                margin-bottom: 15px;
+                border: 0;
+                padding: 7px 10px;
+                border-radius: 3px;
+            }
+
+            #subForm {
+                color: white;
+                background: var(--yellow-);
+                border: none;
+                padding: 10px 15px;
+                font-size: 17px;
+                cursor: pointer;
+
+            }
+        }
+
+        .custom_img {
+            width: 50%;
+
+
+            background: url(../img/form_img.jpg);
+            background-position: center;
+            background-size: cover;
+
+
+        }
+    }
+}
+
+.whyUS {
+    display: flex;
+    padding: 100px 15%;
+    align-items: center;
+
+    .why_left {
+        width: 50%;
+        padding: 25px;
+        padding-left: 0;
+
+        h3 {
+            font-size: 50px;
+        }
+    }
+
+    .why_right {
+        width: 50%;
+        height: 650px;
+
+        .img_bg {
+            background: url(/assets/img/whyUS_img.jpg);
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+            width: 100%;
+            height: 100%;
+        }
+    }
+}
+
+.soap_types {
+    background: var(--light-green-);
+    padding: 60px 50px;
+    padding-bottom: 30px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .types_title {
+        display: flex;
+        border-radius: 10px;
+        justify-content: center;
+        align-items: center;
+        background-color: #ffffff;
+        width: 30%;
+        margin-bottom: 20px;
+
+        .title_spans {
+            font-size: 50px;
+        }
+
+        .types {
+            font-size: 17px;
+        }
+    }
+
+    .types_div {
+        padding: 10px;
+
+        display: flex;
+        flex-wrap: wrap;
+        gap: 30px;
+        justify-content: center;
+
+        .types {
+            width: 45%;
+            background: var(--strong-green-);
+            padding: 20px;
+            border-radius: 10px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
+            h3 {
+                font-size: 40px;
+                color: var(--pink-);
+            }
+
+            p {
+                color: white;
+            }
+        }
+    }
+
+
+}
+
+.footer {
+    padding: 50px 0px;
+    padding-bottom: 20px;
+    .footer_top {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 50px;
+    }
+
+    .footer_bottom {
+        text-align: center;
+    }
+}
 
 
 
