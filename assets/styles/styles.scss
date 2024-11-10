@@ -5,7 +5,7 @@
 
     list-style: none;
     font-family: 'Edu AU VIC WA NT Pre', Arial, Helvetica, sans-serif;
-
+    scroll-behavior: smooth;
 }
 
 :root {
@@ -15,9 +15,7 @@
     --yellow-: #E2A422;
 }
 
-body {
-    scroll-behavior: smooth;
-}
+
 
 .header {
     .header_topLine {
@@ -111,6 +109,12 @@ body {
                         text-decoration: none;
                         color: white;
                         text-transform: capitalize;
+                        padding: 5px 10px;
+                        transition: all 300ms ease;
+                    }
+
+                    a:hover {
+                        background-color: var(--strong-green-);
                     }
                 }
 
@@ -124,8 +128,6 @@ body {
             }
         }
     }
-
-
 
     .header_container {
         background: var(--pink-);
@@ -164,6 +166,13 @@ body {
                 margin-top: 40px;
                 padding: 10px 25px;
                 text-decoration: none;
+
+                transition: all 300ms ease;
+
+            }
+
+            a:hover {
+                transform: scale(1.1);
             }
         }
 
@@ -401,7 +410,11 @@ body {
                 font-size: 17px;
                 cursor: pointer;
 
+                transition: all 300ms ease;
+            }
 
+            #conocenos:hover {
+                transform: scale(1.1);
             }
 
         }
@@ -468,6 +481,12 @@ body {
                 font-size: 17px;
                 cursor: pointer;
 
+                transition: all 300ms ease;
+            }
+
+            #subForm:hover {
+                cursor: pointer;
+                transform: scale(1.1);
             }
         }
 
@@ -575,6 +594,15 @@ body {
 .footer {
     padding: 50px 0px;
     padding-bottom: 20px;
+
+    .footer_title {
+        text-align: center;
+
+        p {
+            font-size: 40px;
+        }
+    }
+
     .footer_top {
         display: flex;
         justify-content: space-evenly;
@@ -586,7 +614,34 @@ body {
     }
 }
 
+//fixed
+#topbtn {
+    position: fixed;
+    bottom: 10px;
+    right: 20px;
 
+    .arrowUp {
+        color: var(--yellow-);
+        font-size: 50px;
+    }
+}
+
+
+
+
+//intersection observer
+.hidden {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateY(-100%);
+    transition: all 1s ease;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateY(0);
+}
 
 //generals
 .spanPink {
@@ -604,6 +659,60 @@ body {
 .spanYellow {
     color: var(--yellow-);
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 //animated bg
 @keyframes move {

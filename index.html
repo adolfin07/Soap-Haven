@@ -20,12 +20,16 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
     <!--favicon-->
     <link rel="shortcut icon" href="assets/img/web_logoPNG.png" type="image/x-icon">
-
+    <!--animate js-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+    <!--jquery-->
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
 <body>
     <!--header-->
-    <header class="header">
+    <header class="header" id="header">
 
         <div class="header_topLine">
             <p>Los mejores jabones, con los mejores precios</p>
@@ -73,10 +77,10 @@
         <header class="header_container background">
 
             <div class="container_txt">
-                <p class="spanDarkG">lets shop</p>
-                <h1>Nuevos <br> Productos</h1>
+                <p class="spanDarkG hidden">lets shop</p>
+                <h1 class="hidden">Nuevos <br> Productos</h1>
 
-                <a href="#">Compra Ahora</a>
+                <a href="#" class="animate__animated animate__flipInX">Compra Ahora</a>
             </div>
 
 
@@ -163,7 +167,7 @@
 
         <div class="main_content">
             <div class="main_content_divs">
-                <div class="product product1">
+                <div class="product product1 hidden">
 
                     <img src="assets/img/soapAromathic.jpg" alt="">
                     <p>Jabón aromático</p>
@@ -173,7 +177,7 @@
 
                 </div>
 
-                <div class="product product2">
+                <div class="product product2 hidden">
 
                     <img src="assets/img/soapArtesanal.jpg" alt="">
                     <p>Jabón artesanal</p>
@@ -182,7 +186,7 @@
                     </a>
                 </div>
 
-                <div class="product product3">
+                <div class="product product3 hidden">
 
                     <img src="assets/img/soapClassic.jpg" alt="">
                     <p>Jabón clásico</p>
@@ -191,7 +195,7 @@
                     </a>
                 </div>
 
-                <div class="product product4">
+                <div class="product product4 hidden">
 
                     <img src="assets/img/soapLove.jpg" alt="">
                     <p>Jabón de amor</p>
@@ -329,30 +333,23 @@
     </section>
     <!--footer-->
     <footer class="footer" id="footer">
-       <div class="footer_top">
-<ul>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-</ul>
-<ul>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-</ul>
-<ul>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-    <li><a href="#">lorem</a></li>
-</ul>
-       </div>
-       <div class="footer_bottom">
-<p>Soap Haven All Rights Reserved &copy;</p>
-       </div>
+        <div class="footer_title">
+            <p>Soap Haven</p>
+        </div>
+        <div class="footer_top">
+          <p>Los mejores Jabónes</p>
+          <p>A los mejores precios</p>
+        </div>
+        <div class="footer_bottom">
+            <p>Soap Haven All Rights Reserved &copy;</p>
+        </div>
     </footer>
+
+    <!--fixed-->
+ <a href="#header" id="topbtn">
+    <i class="fa-solid fa-sort-up fa-bounce arrowUp"></i>
+</a>   
+
       
     
 </body>
